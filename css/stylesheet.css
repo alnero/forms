@@ -4,5 +4,49 @@
 }
 
 *::before, *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background: #F0F0F0;
+}
+
+p {
+	font-family: Avenir Next;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #666666;
+}
+
+h1 {
+	font-family: Avenir Next;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	color: #2E2E2E;
+}
+
+.input-text {
+	font-size: 14px;
+	font-weight: normal;
+	width: 742px;
+	height: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #FFFFFF;
+	box-shadow: 1px #5a6872;
+	color: #152935;
+}
+
+.input-text::placeholder {
+	color: #cdd1d4;
+}
+
+.input-text:focus {
+	box-shadow: 2px #3d70b2;
+}
+
+.input-text[data-invalid], .input-text[data-invalid]:focus {
+	box-shadow: #e0182d;
 }

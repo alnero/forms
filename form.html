@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Form</title>
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="fonts/fonts.css" rel="stylesheet">
-	<link href="css/stylesheet.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<h1>Заявка на веб-разработку</h1>
@@ -13,12 +13,30 @@
 		<select required>
 			<option disabled selected>Выберите услугу</option>
 		</select>
-		<input type="text" name="clientName" value="Имя" required>
-		<input type="text" name="clientEmail" value="E-mail" required>
+
+		<div class="input-text-wrapper">
+			<input id="client_name" class="input-text" type="text" placeholder="Имя" required>
+		</div>
+
+		<div class="input-text-wrapper">
+			<input id="client_email" class="input-text" type="text" placeholder="E-mail" required>
+		</div>
+
 		<input type="file" name="clientFile">
-		<input type="text" name="clientWebSite" value="Ссылка на сайт">
-		<input type="text" name="clientComments" value="Комментарий">
+		
+		<div class="input-text-wrapper">
+			<input id="client_web_site" class="input-text" type="text" placeholder="Ссылка на сайт">
+		</div>
+
+		<div class="input-text-wrapper">
+			<input id="client_comments" class="input-text" type="text" placeholder="Комментарий">
+		</div>
+
 		<input type="submit" value="Отправить заявку">
+
+		<div class="error-text-requirement">
+    			Error, enter correct input text
+  		</div>
 	</form>
 </body>
 </html>
