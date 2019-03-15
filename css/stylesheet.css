@@ -8,7 +8,7 @@
 }
 
 body {
-	background: #F0F0F0;
+	/*background: #F0F0F0;*/
 }
 
 p {
@@ -20,7 +20,7 @@ p {
 }
 
 h1 {
-	font-family: Avenir Next;
+	font-family: Avenir Next Cyr;
 	font-size: 36px;
 	line-height: 48px;
 	text-align: center;
@@ -30,12 +30,13 @@ h1 {
 .input-text {
 	font-size: 14px;
 	font-weight: normal;
-	width: 742px;
+	width: 100%;
+	max-width: 742px;
 	height: 40px;
 	padding-left: 16px;
 	padding-right: 16px;
 	background-color: #FFFFFF;
-	box-shadow: 1px #5a6872;
+	box-shadow: 0 0.5px 2px 1px #5a6872;
 	color: #152935;
 }
 
@@ -44,9 +45,9 @@ h1 {
 }
 
 .input-text:focus {
-	box-shadow: 2px #3d70b2;
+	box-shadow: 0 0.5px 0px 0px #3d70b2;
 }
 
 .input-text[data-invalid], .input-text[data-invalid]:focus {
-	box-shadow: #e0182d;
+	box-shadow: 0 0.5px 2px 2px #e0182d;
 }
