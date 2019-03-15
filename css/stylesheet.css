@@ -4,5 +4,54 @@
 }
 
 *::before, *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background: #F0F0F0;
+}
+
+p {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #666666;
+}
+
+h1 {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	color: #2E2E2E;
+}
+
+.input-text {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	width: 100%;
+	max-width: 742px;
+	height: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #FFFFFF;
+	color: #152935;
+}
+
+.input-text::placeholder {
+	color: #cdd1d4;
+}
+
+.input-text:hover {
+	box-shadow: 0px 4px 10px rgba(144, 144, 144, 0.16);
+}
+
+.input-text:focus {
+	box-shadow: 0px 2px 4px #E7E7E7;
+}
+
+.input-text[data-invalid], .input-text[data-invalid]:focus {
+	box-shadow: 0px 2px 4px #FF4E86;
 }
