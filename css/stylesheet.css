@@ -12,7 +12,7 @@ body {
 }
 
 p {
-	font-family: Avenir Next;
+	font-family: "Avenir Next Cyr", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
@@ -20,7 +20,7 @@ p {
 }
 
 h1 {
-	font-family: Avenir Next Cyr;
+	font-family: "Avenir Next Cyr", sans-serif;
 	font-size: 36px;
 	line-height: 48px;
 	text-align: center;
@@ -28,6 +28,7 @@ h1 {
 }
 
 .input-text {
+	font-family: "Avenir Next Cyr", sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	width: 100%;
