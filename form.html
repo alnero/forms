@@ -7,18 +7,53 @@
 	<link href="css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-	<h1>Заявка на веб-разработку</h1>
-	<p>Пожалуйста заполните данные и отправьте заявку</p>
-	<form action="">
-		<select required>
-			<option disabled selected>Выберите услугу</option>
-		</select>
-		<input type="text" name="clientName" value="Имя" required>
-		<input type="text" name="clientEmail" value="E-mail" required>
-		<input type="file" name="clientFile">
-		<input type="text" name="clientWebSite" value="Ссылка на сайт">
-		<input type="text" name="clientComments" value="Комментарий">
-		<input type="submit" value="Отправить заявку">
-	</form>
+	<header class="header">
+		<div class="container">
+			<h1 class="logo">Lorem Ipsum Logo</h1>
+			<nav class="navigation">
+      			<a class="navigation-item" href="#">Item 1</a>    
+      			<a class="navigation-item" href="#">Item 2</a>    
+      			<a class="navigation-item" href="#">Item 3</a>    
+    		</nav>
+  		</div>
+	</header>
+
+	<main class="main">
+		<h1>Заявка на веб-разработку</h1>
+		<p>Пожалуйста заполните данные и отправьте заявку</p>
+		<form action="">
+			<select required>
+				<option disabled selected>Выберите услугу</option>
+			</select>
+
+			<div class="input-text-wrapper">
+				<input id="client_name" class="input-text" type="text" placeholder="Имя" required>
+			</div>
+
+			<div class="input-text-wrapper">
+				<input id="client_email" class="input-text" type="email" placeholder="E-mail" required autocomplete="off">
+				<label for="client_email" class="input-text-label">E-mail</label>
+			</div>
+
+			<input type="file" name="clientFile">
+		
+			<div class="input-text-wrapper">
+				<input id="client_web_site" class="input-text" type="text" placeholder="Ссылка на сайт">
+			</div>
+
+			<div class="input-text-wrapper">
+				<input id="client_comments" class="input-text" type="text" placeholder="Комментарий">
+			</div>
+
+			<button>Отправить заявку</button>
+
+			<div class="error-text-requirement">
+    			Error, enter correct input text
+  			</div>
+		</form>
+	</main>
+	<footer class="footer">
+  		Bla bla bla, All Rights Reserved, 2019
+	</footer>
 </body>
 </html>
