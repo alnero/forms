@@ -116,3 +116,21 @@ input, textarea, select, button {
   justify-content: center;
   padding: 24px 16px;
 }
+
+.input-file {
+  display: none;
+}
+
+.input-file-description {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.input-file-button-wrapper {
+  max-width: 75px;
+  padding: 10px;
+  margin-top: 10px;
+  background: blue;
+  font-weight: bold;
+  color: white;
+}
