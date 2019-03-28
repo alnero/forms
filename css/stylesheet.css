@@ -121,16 +121,36 @@ input, textarea, select, button {
   display: none;
 }
 
+.input-file-wrapper {
+  max-width: 742px;
+  min-height: 72px;
+  border: 2px dashed #FFFFFF;
+  border-radius: 8px;
+}
+
 .input-file-description {
-  font-weight: bold;
-  margin-top: 50px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #585858;
+}
+
+.input-file-size-limit {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #AAAAAA;
 }
 
 .input-file-button-wrapper {
-  max-width: 75px;
-  padding: 10px;
-  margin-top: 10px;
-  background: blue;
-  font-weight: bold;
-  color: white;
+  max-width: 168px;
+  min-height: 40px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
