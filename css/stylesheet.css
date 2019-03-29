@@ -62,7 +62,7 @@ input, textarea, select, button {
 }
 
 .input-text:hover {
-	box-shadow: 0px 4px 0px 0px rgba(144, 144, 144, 0.16);
+	box-shadow: 0px 4px 10px rgba(144, 144, 144, 0.16);
 }
 
 .input-text:focus {
@@ -115,4 +115,54 @@ input, textarea, select, button {
   flex: 0 0 auto;
   justify-content: center;
   padding: 24px 16px;
+}
+
+.input-file {
+  display: none;
+}
+
+.input-file-wrapper {
+  max-width: 742px;
+  min-height: 72px;
+  border: 2px dashed #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-file-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input-file-description {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #585858;
+}
+
+.input-file-size-limit {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #AAAAAA;
+}
+
+.input-file-button-wrapper {
+  max-width: 178px;
+  min-height: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
