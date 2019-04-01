@@ -7,6 +7,10 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
 	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<!-- Include Choices CSS and JavaScript -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
 </head>
 <body>
 	<header class="header">
@@ -23,8 +27,11 @@
 		<h1>Заявка на веб-разработку</h1>
 		<p>Пожалуйста заполните данные и отправьте заявку</p>
 		<form action="">
-			<select required>
-				<option disabled selected>Выберите услугу</option>
+			<select data-trigger class="select-options-element" name="select-options-element" id="select-options-element">
+				<option placeholder>Выберите услугу</option>
+				<option value="Option 1">Услуга 1</option>
+				<option value="Option 2">Услуга 2</option>
+				<option value="Option 3">Услуга 3</option>
 			</select>
 
 			<div class="input-text-wrapper">
@@ -73,5 +80,11 @@
 	<footer class="footer">
   		Bla bla bla, All Rights Reserved, 2019
 	</footer>
+	<script type="text/javascript">
+		const choices = new Choices(
+			'.select-options-element', {
+			maxItemCount: 1 }
+		);
+	</script>
 </body>
 </html>
