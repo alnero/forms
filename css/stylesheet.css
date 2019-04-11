@@ -12,26 +12,26 @@ html {
 }
 
 body {
-	display: flex;
+  display: flex;
   flex-direction: column;
   min-height: 100%;
-	background: #F0F0F0;
+  background: #F0F0F0;
 }
 
 p {
-	font-family: "Avenir Next Cyr", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	text-align: center;
-	color: #666666;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
 }
 
 h1 {
-	font-family: "Avenir Next Cyr", sans-serif;
-	font-size: 36px;
-	line-height: 48px;
-	text-align: center;
-	color: #2E2E2E;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #2E2E2E;
 }
 
 input, textarea, select, button {
@@ -46,7 +46,7 @@ input, textarea, select, button {
 
 .input-text {
 	font-family: "Avenir Next Cyr", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: normal;
 	width: 100%;
 	max-width: 742px;
