@@ -4,12 +4,13 @@
 	<title>Form</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta charset="utf-8">
+	<!-- Reset css -->
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<!-- Choices CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+	<!-- Own styles CSS -->
 	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
 	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-	<!-- Include Choices CSS and JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
 	<link href="css/choices-additions.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -80,38 +81,11 @@
 	<footer class="footer">
   		Bla bla bla, All Rights Reserved, 2019
 	</footer>
+	<!-- Choices JS -->
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 	<script type="text/javascript">
 		const choices = new Choices(
-			'.select-options-element', {
-			maxItemCount: 1,
-			classNames: {
-				containerOuter: 'choices',
-      			containerInner: 'choices__inner',
-      			input: 'choices__input',
-      			inputCloned: 'choices__input--cloned',
-      			list: 'choices__list',
-      			listItems: 'choices__list--multiple',
-      			listSingle: 'choices__list--single',
-      			listDropdown: 'choices__list--dropdown',
-      			item: 'choices__item',
-      			itemSelectable: 'choices__item--selectable',
-      			itemDisabled: 'choices__item--disabled',
-      			itemChoice: 'choices__item--choice',
-      			placeholder: 'choices__placeholder',
-      			group: 'choices__group',
-      			groupHeading: 'choices__heading',
-      			button: 'choices__button',
-      			activeState: 'is-active',
-      			focusState: 'is-focused',
-      			openState: 'is-open',
-      			disabledState: 'is-disabled',
-      			highlightedState: 'is-highlighted',
-      			hiddenState: 'is-hidden',
-      			flippedState: 'is-flipped',
-      			loadingState: 'is-loading',
-      			noResults: 'has-no-results',
-      			noChoices: 'has-no-choices'
-			} }
+			'.select-options-element', { maxItemCount: 1 }
 		);
 	</script>
 </body>
