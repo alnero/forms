@@ -16,10 +16,10 @@ body {
   flex-direction: column;
   min-height: 100%;
   background: #F0F0F0;
+  font-family: "Avenir Next Cyr", sans-serif;
 }
 
 p {
-  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -27,7 +27,6 @@ p {
 }
 
 h1 {
-  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
@@ -45,7 +44,6 @@ input, textarea, select, button {
 }
 
 .input-text {
-	font-family: "Avenir Next Cyr", sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	width: 100%;
@@ -139,14 +137,12 @@ input, textarea, select, button {
 }
 
 .input-file-description {
-  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #585858;
 }
 
 .input-file-size-limit {
-  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #AAAAAA;
@@ -159,7 +155,6 @@ input, textarea, select, button {
   padding-right: 18px;
   border-radius: 8px;
   background: #FFFFFF;
-  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 16px;
   color: #585858;
   display: flex;

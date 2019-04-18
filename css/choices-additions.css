@@ -19,7 +19,6 @@
 }
 
 .choices__item {
-  font-family: Avenir Next Cyr, sans-serif;
   color: #152935;
 }
 
@@ -44,15 +43,12 @@
 }
 
 .choices__item.choices__item--choice.choices__item--selectable.choices__placeholder {
-  font-family: Avenir Next Cyr, sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #777777;
-  /*opacity: .35;*/
 }
 
 .choices__item.choices__item--choice.choices__item--selectable {
-  font-family: Avenir Next Cyr, sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #585858;
