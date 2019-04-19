@@ -43,6 +43,14 @@ input, textarea, select, button {
 	font-size: inherit;
 }
 
+form {
+	margin: auto;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 .input-text {
 	font-size: 16px;
 	font-weight: normal;
@@ -69,6 +77,14 @@ input, textarea, select, button {
 
 .input-text[data-invalid], .input-text[data-invalid]:focus {
 	box-shadow: 0px 2px 0px 0px #FF4E86;
+}
+
+.input-text-label {
+	display: none;
+}
+
+.error-text-requirement {
+	display: none;
 }
 
 .header {
@@ -103,9 +119,11 @@ input, textarea, select, button {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
   background-color: #f5f6f7;
-  padding: 130px 240px 40px 160px;
+  padding: 130px 240px 40px;
 }
 
 .footer {
