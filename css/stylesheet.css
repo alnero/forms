@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 100%;
   background: #F0F0F0;
   font-family: "Avenir Next Cyr", sans-serif;
 }
@@ -28,6 +29,7 @@ p {
 
 h1 {
   font-size: 36px;
+  font-weight: bold;
   line-height: 48px;
   text-align: center;
   color: #2E2E2E;
@@ -45,10 +47,23 @@ input, textarea, select, button {
 
 form {
 	margin: auto;
-	height: 70vh;
+	height: 80vh;
+	width: 742px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+}
+
+button {
+	align-self: center;
+  	min-width: 211px;
+	height: 56px;
+	background: #CF8DF7;
+	border-radius: 8px;
+  	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFFFFF;
 }
 
 .input-text {
