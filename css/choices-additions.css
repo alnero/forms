@@ -1,10 +1,9 @@
 .choices {
   max-width: 742px;
   max-height: 48px;
-  margin-bottom: 0;
+  margin-bottom: 24px;
   background: #FFFFFF;
   border: none;
-
 }
 
 .choices.is-open.is-focused {
