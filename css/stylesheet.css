@@ -48,7 +48,7 @@ input, textarea, select, button {
 
 form {
 	margin: auto;
-	width: 742px;
+	max-width: 742px;
 	display: flex;
 	flex-direction: column;
 }
@@ -149,7 +149,7 @@ button {
   flex-direction: column;
   flex: 1 0 auto;
   background-color: #f5f6f7;
-  padding: 130px 240px 40px;
+  padding: 130px 24px 40px;
 }
 
 .footer {
