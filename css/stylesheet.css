@@ -48,6 +48,7 @@ input, textarea, select, button {
 
 form {
 	margin: auto;
+	width: 100%;
 	max-width: 742px;
 	display: flex;
 	flex-direction: column;
@@ -100,10 +101,13 @@ button {
 
 .input-text-comment {
 	min-height: 96px;
+	resize: none;
 }
 
 .input-text-comment::placeholder {
 	vertical-align: text-top;
+	font-size: 16px;
+  	font-family: "Avenir Next Cyr", sans-serif;
 }
 
 .error-text-requirement {
