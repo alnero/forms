@@ -110,7 +110,7 @@ button {
 	position: absolute;
 	top: 0px;
   	opacity: 1;
-  	transform: translateY(-1rem);
+  	transform: translateY(-1.1rem);
 }
 
 .input-text:placeholder-shown ~ .dynamic-label {
