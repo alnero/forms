@@ -95,9 +95,30 @@ button {
 	box-shadow: 0px 2px 0px 0px #FF4E86;
 }
 
-.input-text-label {
-	display: none;
+.input-text-wrapper {
+	position: relative;
 }
+
+.input-text-label {
+	display: block;
+  	padding: 0 0 4px;
+  	transition: all 0.15s ease-in;
+  	font-size: 0.9rem;
+}
+
+.input-text-label.dynamic-label {
+	position: absolute;
+	top: 0px;
+  	opacity: 1;
+  	transform: translateY(-1rem);
+}
+
+.input-text:placeholder-shown ~ .dynamic-label {
+  	opacity: 0;
+  	transform: translateY(-0.5rem);
+  	font-size: 1rem;
+}
+
 
 .input-text-comment {
 	min-height: 96px;
