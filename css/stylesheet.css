@@ -15,11 +15,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 100%;
   background: #F0F0F0;
   font-family: "Avenir Next Cyr", sans-serif;
 }
 
 p {
+  margin: 24px 0px 48px 0px;	
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -28,6 +30,7 @@ p {
 
 h1 {
   font-size: 36px;
+  font-weight: bold;
   line-height: 48px;
   text-align: center;
   color: #2E2E2E;
@@ -43,14 +46,35 @@ input, textarea, select, button {
 	font-size: inherit;
 }
 
+form {
+	margin: auto;
+	width: 100%;
+	max-width: 742px;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	margin-top: 24px;
+	align-self: center;
+  	min-width: 211px;
+	height: 56px;
+	background: #CF8DF7;
+	border-radius: 8px;
+  	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFFFFF;
+}
+
 .input-text {
 	font-size: 16px;
 	font-weight: normal;
 	width: 100%;
 	max-width: 742px;
-	height: 40px;
-	padding-left: 16px;
-	padding-right: 16px;
+	height: 48px;
+	padding: 10px 16px;
+	margin-bottom: 24px;
 	background-color: #FFFFFF;
 	color: #152935;
 }
@@ -71,6 +95,46 @@ input, textarea, select, button {
 	box-shadow: 0px 2px 0px 0px #FF4E86;
 }
 
+.input-text-wrapper {
+	position: relative;
+}
+
+.input-text-label {
+	display: block;
+  	padding: 0 0 4px;
+  	transition: all 0.15s ease-in;
+  	font-size: 0.9rem;
+}
+
+.input-text-label.dynamic-label {
+	position: absolute;
+	top: 0px;
+  	opacity: 1;
+  	transform: translateY(-1.1rem);
+}
+
+.input-text:placeholder-shown ~ .dynamic-label {
+  	opacity: 0;
+  	transform: translateY(-0.5rem);
+  	font-size: 1rem;
+}
+
+
+.input-text-comment {
+	min-height: 96px;
+	resize: none;
+}
+
+.input-text-comment::placeholder {
+	vertical-align: text-top;
+	font-size: 16px;
+  	font-family: "Avenir Next Cyr", sans-serif;
+}
+
+.error-text-requirement {
+	display: none;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -79,6 +143,7 @@ input, textarea, select, button {
   padding: 24px 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: white;
+  z-index: 1;
 }
 
 .logo {
@@ -99,13 +164,17 @@ input, textarea, select, button {
 }
 
 .navigation-item {
+  text-orientation: reverse;
+  text-decoration: none; 	
   padding: 4px;
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
   background-color: #f5f6f7;
-  padding: 130px 240px 40px 160px;
+  padding: 130px 24px 72px;
 }
 
 .footer {
@@ -122,6 +191,8 @@ input, textarea, select, button {
 .input-file-wrapper {
   max-width: 742px;
   min-height: 72px;
+  margin-bottom: 24px;
+  padding: 16px;
   border: 2px dashed #FFFFFF;
   border-radius: 8px;
   display: flex;
